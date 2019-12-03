@@ -1,5 +1,16 @@
 .shipmentsRow {
   display: flex;
   justify-content: center;
-  align-items: center;
+  background-color: #ffffff;
+  margin: 2px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.title {
+  color: #a6a6a6;
+}
+
+.inline {
+  display: inline;
 }

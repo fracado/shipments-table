@@ -1,0 +1,18 @@
+.actionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  background-color: #e63b09;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Shipment.css';
 
 export default class Shipment extends Component {
   render() {
@@ -16,14 +17,17 @@ export default class Shipment extends Component {
     } = this.props.shipmentData;
 
     return (
-      <div>
-        <p>{postcodePickup}</p>
-        <p>{cityPickup}</p>
-        <p>{postcodeDropoff}</p>
-        <p>{cityDropoff}</p>
-        <p>{reference}</p>
-        <p>{state}</p>
-        <p>{reference_route}</p>
+      <div className='shipmentData'>
+        <div className='postcodesCities'>
+          <div>{postcodePickup}</div>
+          <div>{cityPickup}</div>
+          <div>&#10230;</div> {/* hmtl entity for long rightwards arrow */}
+          <div>{postcodeDropoff}</div>
+          <div>{cityDropoff}</div>
+        </div>
+        <div>{reference}</div>
+        <div>{state}</div>
+        <div>{reference_route}</div>
       </div>
     );
   }

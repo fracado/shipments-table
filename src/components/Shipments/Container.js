@@ -16,8 +16,8 @@ export default class Container extends Component {
           <h4>Shipments</h4>
           <h4>Actions</h4>
         </div>
-        {this.state.data.map(row => (
-          <ShipmentsRow row={row} />
+        {this.state.data.map((row, i) => (
+          <ShipmentsRow row={row} key={i} />
         ))}
       </div>
     );
