@@ -1,0 +1,15 @@
+.dropoffContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropoffContact,
+.dropoff {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

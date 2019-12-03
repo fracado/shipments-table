@@ -4,9 +4,13 @@ import ShipmentsRow from './ShipmentsRow.js';
 import data from '../../shipments.json';
 
 export default class Container extends Component {
-  state = {
-    data
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data
+    };
+  }
 
   render() {
     console.log(data);
@@ -14,7 +18,7 @@ export default class Container extends Component {
       <div className='container'>
         <div className='headings'>
           <h4>Shipments</h4>
-          <h4>Actions</h4>
+          <h4 id='actionsHeader'>Actions</h4>
         </div>
         {this.state.data.map((row, i) => (
           <ShipmentsRow row={row} key={i} />

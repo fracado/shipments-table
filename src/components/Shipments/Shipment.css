@@ -1,12 +1,37 @@
-.shipmentData {
+.shipmentContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-width: 160px;
+  margin: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.shipment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .postcodesCities {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-weight: bold;
+}
+
+.success {
+  color: #00cb7c;
+  font-weight: bold;
+}
+
+.fail {
+  color: #e63b09;
   font-weight: bold;
 }

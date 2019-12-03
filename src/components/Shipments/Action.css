@@ -2,17 +2,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 30px;
+  min-width: 160px;
+  margin: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .button {
   background-color: #e63b09;
   border: none;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 10px;
+  margin: 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
   font-style: italic;
   font-weight: bold;
+  cursor: pointer;
 }

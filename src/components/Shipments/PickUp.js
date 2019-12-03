@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { faLevelUpAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './PickUp.css';
 
 export default class PickUp extends Component {
   render() {
@@ -10,20 +13,37 @@ export default class PickUp extends Component {
     const hourMax = this.props.pickup.hour.max;
 
     return (
-      <div>
-        <div className='title'>Pick Up</div>
-        <div>{company}</div>
-        <div>{country}</div>
-        <div>{postcode}</div>
-        <div>{street}</div>
-        <div className='title inline'>Date:</div>
-        <div className='inline'>
-          {dateMin}-{dateMax}
+      <div className='pickupContainer'>
+        <div className='iconContainer'>
+          <div className='title'>Pick Up</div>
+          <div>
+            <FontAwesomeIcon className='icon' icon={faLevelUpAlt} />
+          </div>
         </div>
-        <br />
-        <div className='title inline'>Time:</div>
-        <div className='inline'>
-          {hourMin}-{hourMax}
+        <div className='pickup'>
+          <div>{company}</div>
+          <div>{country}</div>
+          <div>{postcode}</div>
+          <div>{street}</div>
+          <br />
+          <div className='title inline'>Date:</div>
+          <div className='inline'>
+            {dateMin}-{dateMax}
+          </div>
+          <div className='title inline'>Time:</div>
+          <div className='inline'>
+            {hourMin}-{hourMax}
+          </div>
+          <br />
+          {/* show contact info when row is expanded: */}
+          {this.props.expanded ? (
+            <div className='pickupContact'>
+              <div className='title'>Contact</div>
+              <div>{this.props.pickup.contact.name}</div>
+              <div>{this.props.pickup.contact.email}</div>
+              <div>{this.props.pickup.contact.phone}</div>
+            </div>
+          ) : null}
         </div>
       </div>
     );

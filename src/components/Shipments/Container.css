@@ -10,7 +10,25 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: #ffffff;
-  padding-left: 8%;
+  padding-left: 11%;
   padding-right: 8%;
   margin: 2px;
+}
+
+@media (max-width: 768px) {
+  #actionsHeader {
+    visibility: hidden;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #a6a6a6;
+  position: relative;
+  float: right;
 }
