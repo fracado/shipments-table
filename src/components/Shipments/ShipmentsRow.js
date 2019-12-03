@@ -16,11 +16,9 @@ export default class ShipmentsRow extends Component {
   }
   toggleExpandRow() {
     this.setState({ expandedRow: !this.state.expandedRow });
-    console.log(this.state.expandedRow);
   }
 
   render() {
-    console.log(this.props.row);
     const pickup = this.props.row.pickup;
     const dropoff = this.props.row.drop_off;
     const cargo = this.props.row.cargo;
@@ -45,7 +43,7 @@ export default class ShipmentsRow extends Component {
         />
         <PickUp pickup={pickup} expanded={this.state.expandedRow} />
         <DropOff dropoff={dropoff} expanded={this.state.expandedRow} />
-        <Action />
+        <Action cargo={cargo} />
       </div>
     );
   }

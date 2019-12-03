@@ -5,7 +5,6 @@ import './Cargo.css';
 
 export default class Cargo extends Component {
   render() {
-    console.log(this.props.cargo);
     return (
       <div className='cargoContainer'>
         <div className='iconContainer'>
@@ -16,8 +15,8 @@ export default class Cargo extends Component {
         </div>
         <div className='cargo'>
           <div>{this.props.cargo.type}</div>
-          <div>{this.props.cargo.size}</div>
           <div>{this.props.cargo.weight}</div>
+          <div>{this.props.cargo.size}</div>
         </div>
         <br />
         {this.props.expanded ? (

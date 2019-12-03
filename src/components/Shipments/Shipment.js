@@ -5,8 +5,6 @@ import './Shipment.css';
 
 export default class Shipment extends Component {
   render() {
-    console.log(this.props.shipmentData);
-
     // take variables from data object
     const {
       postcodePickup,

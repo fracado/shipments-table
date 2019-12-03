@@ -13,7 +13,6 @@ export default class Container extends Component {
   }
 
   render() {
-    console.log(data);
     return (
       <div className='container'>
         <div className='headings'>

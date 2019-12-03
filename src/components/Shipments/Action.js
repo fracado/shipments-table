@@ -5,7 +5,9 @@ export default class Action extends Component {
   render() {
     return (
       <div className='actionContainer'>
-        <button className='button'>reorder</button>
+        <button className='button' id='activeButton'>
+          reorder
+        </button>
       </div>
     );
   }
