@@ -26,12 +26,12 @@ export default class DropOff extends Component {
           <div>{postcode}</div>
           <div>{street}</div>
           <br />
-          <div className='title inline'>Date:</div>
-          <div className='inline'>
+          <div>
+            <span className='title'>Date:</span>
             {dateMin}-{dateMax}
           </div>
-          <div className='title inline'>Time:</div>
-          <div className='inline'>
+          <div>
+            <span className='title'>Time:</span>
             {hourMin}-{hourMax}
           </div>
           <br />
